@@ -2,16 +2,21 @@
 #######################
 # zmodload zsh/zprof
 
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:/Users/rlamas/go/bin:~/bin/terraform:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/sxue/.oh-my-zsh/bin:/Users/sxue/go/bin:~/bin/terraform:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 
 # Set name of the theme to load.
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="sonicradish"
+#ZSH_THEME="sonicradish"
+ZSH_THEME="maran"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -70,11 +75,21 @@ unset config_files
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git         \
+         zsh-completions \
+         brew \
+         aws \
+         vundle \
+         rake \
          battery     \
          extract     \
          osx         \
          go          \
          rbenv       \
+         ruby \
+         python \
+         pip \
+         zsh-syntax-highlighting \
+         colorize \
          bgnotify    \
          copydir     \
          copybuffer  \
@@ -99,4 +114,7 @@ plugins=(git         \
 # [ -f $ZSH/plugins/kube-ps1/kube-ps1.zsh ] && source $ZSH/plugins/kube-ps1/kube-ps1.zsh
 
 # added by travis gem
-[ -f /Users/rlamas/.travis/travis.sh ] && source /Users/rlamas/.travis/travis.sh
+[ -f /Users/sxue/.travis/travis.sh ] && source /Users/sxue/.travis/travis.sh
+
+#export PATH=/Users/sxue/work/main/build-tools/bin:$PATH
+#export GRADLE_HOME=/Users/sxue/work/main/build-tools/gradle/current
