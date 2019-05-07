@@ -9,6 +9,10 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/sxu
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 
+# make sure key foward (ssh -A) is working when you need this feature, ssh-agent should be installed first.
+eval ssh-agent
+ssh-add ~/.ssh/id_rsa
+
 # Set name of the theme to load.
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
