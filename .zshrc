@@ -9,6 +9,8 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/sxu
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 
+# add zsh-completions, you need install it first with brew install zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
 # make sure key foward (ssh -A) is working when you need this feature, ssh-agent should be installed first.
 eval ssh-agent
 ssh-add ~/.ssh/id_rsa
@@ -20,6 +22,7 @@ ssh-add ~/.ssh/id_rsa
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="sonicradish"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="maran"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
