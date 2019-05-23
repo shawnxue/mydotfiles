@@ -21,6 +21,7 @@ Assumptions
 * Tmux + emacs mode
 * ZSH
 * iTerm2
+* install iTerm2 theme powerlevel9k: git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 iTerm2 preferences
 ===
