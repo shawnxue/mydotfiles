@@ -34,6 +34,9 @@ if [ ! -d ${TMUX_TPM_DIR} ]; then
     git clone https://github.com/tmux-plugins/tpm ${TMUX_TPM_DIR}
 fi
 
+# install kubectl
+# install krew https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+# install ksniff: https://github.com/eldadru/ksniff
 echo "Installing all dotfiles"
 /usr/bin/rake link
 
