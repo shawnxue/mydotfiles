@@ -37,6 +37,7 @@ fi
 # install kubectl
 # install krew https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 # install ksniff: https://github.com/eldadru/ksniff
+# set java home in .zshrc: export JAVA_HOME=`/usr/libexec/java_home`
 echo "Installing all dotfiles"
 /usr/bin/rake link
 
